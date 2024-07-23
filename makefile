@@ -7,3 +7,6 @@ templ:
 
 tailwind:
 	@npx tailwindcss -i css/input.css -o public/style.css --minify
+
+sqlc:
+	@sqlc generate
