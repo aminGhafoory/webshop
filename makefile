@@ -10,3 +10,10 @@ tailwind:
 
 sqlc:
 	@sqlc generate
+
+
+gooseup:
+	@cd models/sql/schema && goose postgres postgres://postgres:amin235711@amin-laptop.local:5432/webshop up
+
+goosedown:
+	@cd models/sql/schema && goose postgres postgres://postgres:amin235711@amin-laptop.local:5432/webshop down
